@@ -1,0 +1,24 @@
+<div id="categories" class="clearfix">
+
+<% @categories_tree.each_with_index do |category, index| -%>
+  
+  <div class="category">
+   <h2><%= link_to category.name, category_perma_name_path(category.url_perma_name) %></h2>
+   <% unless category.children.blank? -%>
+   <p>
+    <% category.children[0,5].each do |subcategory| -%>
+      <%= link_to subcategory.name, category_perma_name_path(subcategory.url_perma_name) %></a><%= ',' if subcategory != category.children.last %>
+    <% end -%>
+    <% if category.children.length > 6 -%>
+    <em><%= 'more...' %></em>
+    <% end -%>
+   </p>
+   <% end -%>
+  </div>
+  
+  <%= '<br style="clear: both;" />' if (index+1) % 3 == 0 %>
+<% end -%>
+
+</div><!-- categories -->
+
+<br style="clear: both;" />

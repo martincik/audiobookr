@@ -1,0 +1,18 @@
+<div id="audiobooks">
+<% if @audio_books.empty? -%>
+  <p>No results found! Try again.</p>
+<% else -%>
+  <% @audio_books.each do |audio_book| -%>
+  <div class="audiobook clearfix">
+    <img src="<%= audio_book.thumb_nail_url %>" alt="<%= audio_book.name %> - Thumbnail" />
+    <h1><%= audio_book.name %></h1>
+    <strong>Category:</strong> <%= audio_book.categories.first.get_path.map(&:name).join(' > ') unless audio_book.categories.empty? %><br />
+    <strong>Author(s), Publisher:</strong> <%= audio_book.author %>, <%= audio_book.publisher %><br />
+    <strong>Price:</strong> <%= audio_book.our_price %> <%= audio_book.currency %>
+    <p>
+      <%= audio_book.short_description %>
+    </p>
+  </div>
+  <% end -%>
+<% end -%>
+</div><!-- audiobooks -->

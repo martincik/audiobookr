@@ -1,0 +1,18 @@
+development:
+  adapter: mysql
+  encoding: utf8
+  database: audiobookr_development
+  username: audiobookr
+  password: audiobookr
+  encoding: utf8
+
+test:
+  adapter: mysql
+  encoding: utf8
+  database: audiobookr_test
+  username: audiobookr
+  password: audiobookr
+  encoding: utf8
+
+production:
+  development

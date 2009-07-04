@@ -1,0 +1,14 @@
+#audiobooks {
+  padding: 1em 0;
+  text-align: left;
+}
+
+#audiobooks .audiobook {
+  padding-bottom: 1em;
+}
+
+#audiobooks .audiobook img {
+	float: left; 
+	padding-right: 1em; 
+	padding-bottom: .5em;
+}

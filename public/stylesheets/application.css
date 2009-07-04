@@ -1,0 +1,92 @@
+body#audiator {
+  background-color: #fff;
+}
+
+#container {
+  width: 74em;
+  margin: 0 auto;
+  padding: 0;
+  padding-top: 1em;
+  text-align: center;
+  background-color: #fff;
+}
+
+#header {
+  padding-bottom: 1em;
+}
+
+#logo {
+  float: left;
+  width: 20.5em;
+  padding-left: .5em;
+  text-align: left;
+}
+
+#user-navigation {
+  float: right;
+  width: 52.5em;
+  text-align: right;
+}
+
+#personalize {
+  padding: 0; margin: 0;
+  padding-right: .5em;
+}
+
+#personalize a, #personalize a:link, #personalize a:hover, #personalize a:visited {
+  color: #111;
+  border-bottom: 1px dotted #111;
+}
+
+#logged-user {
+  padding: 1em 0;
+  color: #666;
+}
+
+#content {
+  padding: 2.4em 1em 0 1em;
+}
+
+.selected {
+  color: #f00;
+}
+
+#footer {
+  padding: 2em 0;
+  color: #888;
+  font-size: 8pt;
+}
+
+input.button, input.submit {
+  background: transparent url(/images/submit_button.gif) repeat-x scroll left top;
+  border: 1px outset #ccc;
+  color: #444;
+  text-decoration: none;
+  cursor:pointer;
+  padding: .2em .5em;
+  width: auto;
+}
+
+#search {
+  background: #EFF5FF url(/images/search_background.png) top left repeat-x;
+  color: #000;
+  border: 1px solid #9FBFFF;
+  padding: 1em 0;
+  line-height: 1;
+}
+
+#search form {
+  margin: 0; padding: 0;
+  vertical-align: center;
+}
+
+#search input {
+  margin: 0; padding: 0;
+  vertical-align: center;
+  font-size: 16pt;
+}
+
+#search p {
+  margin: 0; padding: 0;
+  vertical-align: center;
+}

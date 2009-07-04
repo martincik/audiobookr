@@ -1,0 +1,3 @@
+<%= render :partial => 'common/audiobooks', :locals => { :audio_books => @audio_books } %>
+
+<%= will_paginate @audio_books, :params => { :query => params[:query] } %>

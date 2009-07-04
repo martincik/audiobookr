@@ -1,0 +1,128 @@
+
+body, p, h1, h2, h3 {
+  margin: 0;
+  padding: 0;
+  font-family: Verdana, sans-serif;
+  voice-family: "\"}\"";
+  voice-family: inherit;
+  font-size: 10pt;
+}
+
+table, td {
+  margin: 0;
+  padding: 0;
+  vertical-align: top;
+}
+
+form {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  z-index: 1;
+}
+
+input {
+  font-size: small;
+  z-index: 1;
+}
+
+select {
+  z-index: 1;
+}
+
+div, h1, h2, h3, p {
+  padding: 0;
+  margin: 0;
+  vertical-align: top;
+}
+
+a[name] {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+a, a:link {
+  color: #36c;
+  background-color: transparent;
+  text-decoration: none;
+  border-bottom: 1px dotted #36c;
+}
+
+a:visited {
+  color: #36c;
+  border-bottom: 1px dotted #36c;
+  background-color: transparent;
+}
+
+a:hover {
+  color: #f00;
+  text-decoration: none;
+  border-bottom: 1px dotted #36c;
+  background-color: transparent;
+}
+
+
+h1, h2, h3 {
+  margin: 0px;
+  padding: 0px;
+  color: #666;
+}
+
+h1 {
+  font-size:  15pt;
+  font-weight: normal;
+}
+
+h2 {
+  font-size: 13pt;
+}
+
+h2.error {
+  color: #f00;
+}
+
+li.error {
+  color: #f00;
+}
+
+p {
+  line-height: 1.6;
+  color: #444;
+  font-size: 10pt;
+  padding-top: 1em;
+}
+
+.clearfix:after {
+  content: "."; 
+  display: block; 
+  height: 0; 
+  clear: both; 
+  visibility: hidden;
+}
+
+/* _height and zoom properties are used for IE 7 Damn! */
+.clearfix {display: block; overflow: hidden;}
+
+/* ie win hack ~ height acts like min-height \*/
+* html .clearfix {_height: 1%; zoom: 1;}
+/* end comment required */
+
+.skiplink {  
+  position: absolute;
+	left: -1000px;
+	width: 990px;
+	font-size:1px; line-height:1px;
+  border: 1px solid #f00;
+}
+
+.hide {
+	display: none;
+}
+
+.clear {
+	clear: both;
+}
+
+.hot {
+  border: 1px solid #f00 !important;
+}
