@@ -1,3 +1,4 @@
 data/*
 log/*.log
+log/*.pid
 db/sphinx/*
