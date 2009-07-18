@@ -1,10 +1,4 @@
-#categoryContent {
-  text-align: left;
-  width: 74em;
-}
-
 #categories {
-  width: 74em;
   margin: 0; padding: 0;
   padding: 2em 0;
 }
@@ -20,21 +14,21 @@
 #categories .category p a, 
 #categories .category p a:link,
 #categories .category p a:visited {
-  color: #8EA4CF;
+  color: #666;
   font-size: 10pt;
   background-color: #fff;
-  border-bottom: 1px dotted #36c;
+  border-bottom: 1px dotted #666;
 }
 
 #categories .category p a:hover {
   color: #f00;
 }
 
-
 #categories .category h2 a, 
 #categories .category h2 a:link, 
 #categories .category h2 a:visited,
 #categories .category h2 a:hover {
+	color: #36c;
   text-decoration: none;
   background-color: transparent;
   font-size: 13pt;

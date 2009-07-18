@@ -64,7 +64,7 @@ class Category < ActiveRecord::Base
   
   before_create :generate_perma_name  
   def generate_perma_name
-    self.perma_name = name.strip.downcase.gsub(/&/, 'and').gsub(/(\ )+|(_)+/, '-').gsub(/:/,'').gsub(/[^0-9a-z]/, '-')
+    self.perma_name = name.strip.downcase.gsub(/&/, 'and').gsub(/(\ )+|(_)+/, '-').gsub(/:/,'').gsub(/[^0-9a-z]/, '-').gsub('\-+', '-')
   end
   
   def self.find_by_perma_name(perma_name)

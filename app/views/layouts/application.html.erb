@@ -1,6 +1,5 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
-        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<!doctype html>
+<html>
 <head>
   <title>AudioBookr - Audio Books Aggregator</title>
 
@@ -10,45 +9,33 @@
   <%= stylesheet_link_tag 'audiator', :media => 'screen' %>
 </head>
 
-<body id="audiator">
-<div id="container">
+<body>
+<div>
+  <header>
+    <h1>AudioBookr</h1>
+    <h2>Audio Books Aggregator</h2>
+  </header>
 
-  <div id="header" class="clearfix">
+  <section id="search">
+    <%= render :partial => 'common/search' %>
+  </section> 
 
-   <div id="logo">
-     <h1>AudioBookr</h1>
-     <h2>Audio Books Aggregator</h2>
-   </div><!-- logo -->
-   
-   <div id="user-navigation" class="clearfix">
-   
-    <div id="personalize">
-      <a href="#">log in</a> | 
-      <a href="#">register</a>
-    </div><!-- personalize -->
-    
-   </div><!-- instantInfo -->
-   
-  </div><!-- header -->
+  <section>
+    <%= yield %>
+  </section>
 
-  <%= render :partial => 'common/search' %>
-
-  <%= yield %>
-
-  <div id="footer">
-  
+  <footer>
     <div id="links">
       <a href="#">News</a> | 
       <a href="#">About</a> | 
       <a href="#">Use conditions</a> | 
       <a href="#">Policy</a> | 
       <a href="#">Contact</a>
-    </div><!-- links -->
+    </div>
     
     <br />
     Copyright &copy; 2009 AudioBookr Team. All rights reserved.
-  </div> <!-- footer -->
-  
-</div><!--container-->
+  </footer>
+
 </body>
 </html>
