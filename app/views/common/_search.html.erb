@@ -1,8 +1,6 @@
 <% form_tag search_path, :method => :post do -%>
 <p>
- <label for="search" style="padding-right: 1em;">I like to listen to</label>
  <input id="search-input" type="text" name="query" value="" />
-
- <input id="submit" type="submit" class="submit" value="Search" />
+ <a class='large magenta awesome' onclick="document.interview_form.submit();">Search &#x21A9;</a>
 </p>
 <% end -%>

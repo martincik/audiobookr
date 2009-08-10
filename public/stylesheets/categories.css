@@ -1,12 +1,11 @@
 #categories {
   margin: 0; padding: 0;
-  padding: 2em 0;
 }
 
 #categories .category {
   float: left;
   width: 22em;
-  padding: 0 1em 1.5em 1em;
+  padding: 0 1em 0em 1em;
   text-align: left;
   color: #8EA4CF;
 }

@@ -5,13 +5,14 @@
 }
 
 /* Tell the browser to render HTML 5 elements as block */
-header, footer, aside, nav, article {
+header, footer, aside, nav, article, section {
 	display: block;
 }
 
 body {
-  margin: 0 auto;
+  margin: 0;
   padding: 0;
+  padding: 2em;
 	width: 74em;
   font: 10pt/16pt Verdana, Helvetica, Arial, sans-serif;
 }
@@ -43,6 +44,8 @@ h1, h2, h3 {
 h1 {
   font-size:  15pt;
   font-weight: normal;
+  font-family: Georgia,"Times New Roman",Times,Serif;
+  letter-spacing: 0;
 }
 
 h2 {

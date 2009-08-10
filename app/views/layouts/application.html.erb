@@ -3,26 +3,25 @@
 <head>
   <title>AudioBookr - Audio Books Aggregator</title>
 
-  <meta http-equiv="imagetoolbar" content="no" />  
   <meta http-equiv="content-type" content="text/html; charset=utf-8" />
  
-  <%= stylesheet_link_tag 'audiator', :media => 'screen' %>
+  <%= stylesheet_link_tag 'audiobookr', :media => 'screen' %>
 </head>
 
 <body>
-<div>
   <header>
-    <h1>AudioBookr</h1>
-    <h2>Audio Books Aggregator</h2>
+    <h1>&hearts; AudioBookr &rarr;</h1>
   </header>
 
-  <section id="search">
-    <%= render :partial => 'common/search' %>
-  </section> 
+  <div id="content">
+    <section id="search">
+      <%= render :partial => 'common/search' %>
+    </section> 
 
-  <section>
-    <%= yield %>
-  </section>
+    <section id="main">
+      <%= yield %>
+    </section>
+  </div>
 
   <footer>
     <div id="links">
